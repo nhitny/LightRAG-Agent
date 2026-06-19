@@ -1,0 +1,360 @@
+Q1: Ảnh xám và ảnh RGB khác nhau như thế nào về cách biểu diễn dữ liệu?
+A1: Ảnh xám và ảnh RGB khác nhau cơ bản về cách biểu diễn dữ liệu như sau:
+
+### Ảnh Xám
+
+- **Biểu diễn Bằng Ma Trận Đơn Lẻ:** Mỗi điểm ảnh (pixel) trong ảnh xám được biểu diễn bởi một giá trị duy nhất từ ...
+
+Q2: Trong biểu diễn ảnh RGB, “depth” có ý nghĩa gì?
+A2: Trong biểu diễn ảnh RGB, "depth" của ảnh thường được hiểu là số lượng kênh màu, cụ thể là ba kênh màu: đỏ (Red), xanh lục (Green), và xanh lam (Blue). Mỗi kênh được biểu diễn bằng một ma trận, và ba m...
+
+Q3: Vì sao dữ liệu ảnh thường được biểu diễn dưới dạng tensor?
+A3: Dữ liệu ảnh thường được biểu diễn dưới dạng tensor bởi vì các tensor cung cấp một cách hiệu quả để lưu trữ thông tin phức tạp của hình ảnh mà máy tính có thể xử lý trong các mô hình học sâu như mạng N...
+
+Q4: Bài toán phân loại ảnh là gì?
+A4: Bài toán phân loại ảnh là một lĩnh vực trong xử lý ảnh, trong đó mục tiêu chính là phân loại các đối tượng bên trong một hình ảnh thành các lớp đã được định nghĩa trước. Đầu vào của bài toán này thườn...
+
+Q5: Đầu vào và đầu ra của bài toán phân loại ảnh bằng mạng học sâu là gì?
+A5: Trong bài toán phân loại ảnh sử dụng mạng học sâu, đầu vào và đầu ra được xác định như sau:
+
+**Đầu vào:**
+- Đầu vào của bài toán phân loại ảnh là một tấm ảnh kỹ thuật số. Tấm ảnh này có thể là ảnh mức...
+
+Q6: Vì sao mạng neural network fully connected không phù hợp khi xử lý ảnh kích thước lớn?
+A6: Mạng neural network fully connected không phù hợp khi xử lý ảnh kích thước lớn chủ yếu do hai yếu tố: số lượng tham số quá lớn và hiện tượng overfitting.
+
+1. **Số lượng tham số quá lớn**: Khi sử dụng ...
+
+Q7: Với ảnh kích thước 200×200 và một tầng fully connected 40K node, số tham số xấp xỉ là bao nhiêu?
+A7: Đối với một mạng neural tối thiểu, khi xử lý với ảnh đầu vào có kích thước 200x200 và một tầng fully connected với 40,000 node, ta cần tính số lượng tham số dựa trên kết nối đầy đủ giữa các điểm ảnh đ...
+
+Q8: Vì sao số lượng tham số quá lớn dễ dẫn đến overfitting?
+A8: Số lượng tham số trong một mô hình học máy có thể gây ra vấn đề overfitting khi quá lớn. Overfitting xảy ra khi mô hình học quá kỹ trên tập dữ liệu huấn luyện, bao gồm cả nhiễu và các mẫu bất thường c...
+
+Q9: Mạng locally connected giúp giảm tham số bằng cách nào?
+A9: Mạng neural locally connected giúp giảm số lượng tham số thông qua việc kết nối mỗi nút với một vùng cục bộ của dữ liệu đầu vào thay vì kết nối với tất cả các điểm ảnh. Thay vì mỗi một node trong mạng...
+
+Q10: Ý tưởng “chia sẻ trọng số” trong CNN giúp ích gì so với locally connected?
+A10: No relevant context found for the query.
+
+Đã chạy 10 câu. Nghỉ 600 giây...
+
+Q11: Phép convolution trong CNN là gì?
+A11: Phép convolution trong CNN (Convolutional Neural Networks) là một phép biến đổi cơ bản và nổi tiếng trong lĩnh vực xử lý tín hiệu, đặc biệt trong việc xử lý hình ảnh. Nó bao gồm việc sử dụng các bộ lọ...
+
+Q12: Vì sao convolution được xem là một phép biến đổi tuyến tính?
+A12: Convolution được xem là một phép biến đổi tuyến tính vì bản chất của nó là một loạt các thao tác nhân và cộng dồn tổng hợp. Cụ thể, trong quá trình convolution, một filter (hay kernel) trượt qua ảnh đ...
+
+Q13: Mục tiêu chính của tầng convolution trong CNN là gì?
+A13: No relevant context found for the query.
+
+Q14: Filter trong CNN là gì?
+A14: Trong mạng nơ-ron tích chập (CNN), **filter**, hay còn gọi là kernel, là một tập hợp các tham số học được sử dụng trong quá trình tích chập để trích xuất đặc trưng từ dữ liệu đầu vào, như hình ảnh. Cá...
+
+Q15: Một filter khi áp dụng lên ảnh đầu vào sẽ tạo ra kết quả gì?
+A15: Khi một filter được áp dụng lên ảnh đầu vào, nó thực hiện quá trình gọi là phép biến đổi tích chập (convolution). Quá trình này có mục đích chính là trích xuất các đặc trưng từ ảnh. Cụ thể, filter sẽ ...
+
+Q16: Sự khác nhau giữa “feature” và “feature map” là gì?
+A16: **Feature** và **Feature Map** là hai khái niệm quan trọng trong lĩnh vực mạng nơ-ron thần kinh, đặc biệt là trong các mạng nơ-ron tích chập (CNNs), nhưng chúng có vai trò và ý nghĩa khác nhau trong q...
+
+Q17: Nếu đầu vào có kích thước W × H × D, đầu ra của tầng convolution thường có dạng gì?
+A17: Đầu ra của tầng convolution phụ thuộc vào nhiều yếu tố như kích thước của bộ lọc (kernel), stride, và padding. Khi đầu vào có kích thước \( W \times H \times D \), chúng ta có thể tính kích thước đầu ...
+
+Q18: Vì sao độ sâu của filter phải bằng độ sâu của input?
+A18: Độ sâu của filter phải bằng độ sâu của input vì trong quá trình xử lý dữ liệu bằng phép biến đổi tích chập (convolution), mỗi bộ lọc (filter) cần áp dụng riêng lẻ trên các kênh khác nhau của dữ liệu đ...
+
+Q19: Khi có K filter, độ sâu đầu ra của tầng convolution sẽ bằng bao nhiêu?
+A19: Khi một tầng convolution có \( K \) filter, độ sâu đầu ra của tầng đó sẽ chính bằng \( K \). Điều này có nghĩa là số lượng filter được sử dụng trong quá trình convolution sẽ quyết định độ sâu của tens...
+
+Q20: Vì sao nói mỗi filter học một loại đặc trưng riêng?
+A20: Trong các mạng nơ-ron tích chập (CNN), mỗi filter (hay còn gọi là convolutional kernel) có nhiệm vụ học một loại đặc trưng cụ thể từ dữ liệu đầu vào. Đặc trưng này có thể bao gồm các cạnh, kết cấu, ho...
+
+Đã chạy 20 câu. Nghỉ 600 giây...
+
+Q21: Phép convolution trên ảnh xám khác gì so với ảnh RGB?
+A21: Phép convolution (phép tích chập) trên ảnh xám so với ảnh RGB có sự khác biệt chủ yếu ở số lượng kênh màu liên quan đến quá trình xử lý. Dưới đây là chi tiết cụ thể:
+
+1. **Ảnh xám**:
+   - Ảnh xám chỉ ...
+
+Q22: Với ảnh RGB, filter 2D có còn đủ để tích chập trực tiếp không?
+A22: Khi làm việc với hình ảnh RGB trong ngữ cảnh của mạng nơ-ron tích chập (Convolutional Neural Networks, CNNs), các bộ lọc (filters) không còn là hai chiều đơn giản. Thay vào đó, chúng phải phù hợp với ...
+
+Q23: Vì sao filter áp dụng cho ảnh RGB phải có kích thước F × F × D?
+A23: Filter trong một mạng neural, đặc biệt là khi xử lý với hình ảnh RGB, phải có kích thước \( F \times F \times D \) bởi vì điều này đảm bảo rằng filter có thể xử lý toàn bộ dữ liệu của mỗi kênh màu tro...
+
+Q24: Khi trượt filter trên ảnh RGB, mỗi vị trí đầu ra được tính như thế nào?
+A24: Trong quá trình trượt bộ lọc (filter) trên ảnh RGB, mỗi vị trí đầu ra được tính bằng cách áp dụng phép biến đổi chập (convolution) giữa bộ lọc và một vùng của ảnh. Đối với ảnh RGB, đầu vào có ba kênh ...
+
+Q25: Một filter áp dụng trên ảnh RGB cho ra bao nhiêu feature?
+A25: Khi một filter được áp dụng trên một ảnh RGB, sẽ tạo ra một feature. Trong trường hợp của ảnh RGB, độ sâu của input sẽ là 3 do có ba kênh màu: đỏ, xanh lá, và xanh dương. Filter được sử dụng cũng sẽ c...
+
+Q26: Nhiều filter trên cùng một ảnh RGB tạo ra điều gì?
+A26: Khi nhiều bộ lọc (filters) được áp dụng trên cùng một ảnh RGB, mỗi bộ lọc sẽ tạo ra một đặc trưng (feature) riêng. Do ảnh RGB có ba kênh màu (Red, Green, Blue), độ sâu của bộ lọc phải tương ứng với độ...
+
+Q27: Tại sao chồng các feature lại tạo thành một tensor 3D?
+A27: Trong quá trình tạo ra một tensor 3D từ các feature, chúng ta thực hiện việc chồng các feature lại với nhau. Đó là vì mỗi feature được tạo ra từ việc áp dụng một filter trên dữ liệu đầu vào và theo sa...
+
+Q28: Trong CNN, “receptive field” là gì?
+A28: Tôi xin lỗi, trong dữ liệu cung cấp không có thông tin nào về "receptive field" trong mạng nơ-ron tích chập (CNN).
+
+Q29: Receptive field có liên quan như thế nào đến vùng ảnh mà một neuron “nhìn thấy”?
+A29: Receptive field trong ngữ cảnh của mạng nơ-ron tích chập (CNN), liên quan mật thiết đến vùng ảnh mà một neuron có khả năng "nhìn thấy" hay xử lý. Trong một CNN, các nơ-ron trong các lớp khác nhau có c...
+
+Q30: Vì sao receptive field quan trọng trong việc học đặc trưng?
+A30: Receptive field là một khái niệm quan trọng trong việc học đặc trưng của mạng neuron, đặc biệt là CNN (Convolutional Neural Network). Nó đề cập đến vùng của ảnh gốc mà một neuron nhất định trong mạng ...
+
+Đã chạy 30 câu. Nghỉ 600 giây...
+
+Q31: Stride là gì trong tầng convolution?
+A31: **Stride** trong tầng convolution là một thông số quan trọng quyết định cách bộ lọc di chuyển trên dữ liệu đầu vào trong quá trình tính toán. Trong ngữ cảnh của một kết quả lọc trong mạng nơ-ron tích ...
+
+Q32: Khi tăng stride, kích thước feature map thay đổi như thế nào?
+A32: Khi tăng stride trong quá trình thực hiện phép convolution, kích thước của feature map sẽ bị giảm xuống. Cụ thể, stride xác định độ dài bước nhảy của filter qua input, và việc tăng stride sẽ làm giảm ...
+
+Q33: Stride = 1 và stride = 2 khác nhau ra sao về số vị trí trượt của filter?
+A33: Sự khác biệt giữa stride = 1 và stride = 2 về số vị trí trượt của filter chủ yếu nằm ở khoảng cách mà filter di chuyển trên ảnh đầu vào:
+
+- **Stride = 1**: Khi stride được đặt là 1, filter di chuyển m...
+
+Q34: Vì sao convolution làm mất thông tin ở biên ảnh?
+A34: Convolution có thể làm mất thông tin ở biên của ảnh do cách thức hoạt động của nó. Phép biến đổi convolution thường áp dụng một ma trận lọc (kernel) lên các vùng của ảnh đầu vào. Khi kernel được áp dụ...
+
+Q35: Padding là gì?
+A35: **Padding** là một kỹ thuật trong xử lý dữ liệu đầu vào của mạng nơ-ron nhân tạo, đặc biệt là trong các mạng nơ-ron tích chập (CNNs). Mục đích của padding là để duy trì kích thước ban đầu của dữ liệu ...
+
+Q36: Vì sao ta cần thêm padding khi thực hiện convolution?
+A36: Khi thực hiện phép biến đổi convolution trên một bức ảnh, thường xảy ra hiện tượng giảm kích thước của ảnh đầu ra so với ảnh đầu vào. Để giải quyết vấn đề này, padding được áp dụng nhằm giữ nguyên kíc...
+
+Q37: Zero padding hoạt động như thế nào?
+A37: Zero padding là một kỹ thuật trong xử lý dữ liệu đầu vào cho mạng neural, đặc biệt là trong mạng neuron tích chập (CNN). Nó hoạt động bằng cách thêm các giá trị 0 vào các biên của ảnh đầu vào hoặc dữ ...
+
+Q38: Padding giúp giải quyết những vấn đề gì của convolution?
+A38: Padding trong quá trình xử lý của convolution giúp giải quyết một số vấn đề quan trọng như sau:
+
+1. **Giữ Nguyên Kích Thước Đầu Vào**: Khi thực hiện phép biến đổi convolution, kích thước của hình ảnh ...
+
+Q39: Padding có ảnh hưởng như thế nào đến kích thước đầu ra?
+A39: Padding là một kỹ thuật quan trọng dùng trong các mạng nơron tích chập (CNN) để điều chỉnh kích thước đầu ra của phép biến đổi tích chập. Cụ thể, việc sử dụng padding sẽ ảnh hưởng đến kích thước của ả...
+
+Q40: Khi nào nên dùng padding để giữ nguyên kích thước không gian của ảnh?
+A40: Khi thực hiện các phép biến đổi như convolution trong hệ thống mạng nơ-ron nhân tạo, đặc biệt là trong mạng nơ-ron tích chập (CNN), việc sử dụng `padding` thường là cần thiết để giữ nguyên kích thước ...
+
+Đã chạy 40 câu. Nghỉ 600 giây...
+
+Q41: Vì sao sau tầng convolution thường cần một hàm kích hoạt?
+A41: Sau tầng convolution trong mạng nơ-ron thường cần một hàm kích hoạt để áp dụng biến đổi phi tuyến. Điều này là cần thiết bởi vì phép biến đổi convolution bản chất là một phép tuyến tính, chỉ bao gồm c...
+
+Q42: Hàm ReLU được định nghĩa như thế nào?
+A42: Hàm ReLU (Rectified Linear Unit) được định nghĩa trong các tầng kích hoạt (activation) của mạng neural. Cụ thể, công thức của hàm ReLU được cho bởi:
+
+- Hàm ReLU của đầu vào \( z \) là \( \max(0, z) \)...
+
+Q43: ReLU xử lý các giá trị âm và dương ra sao?
+A43: Hàm ReLU, viết tắt của Rectified Linear Unit, là một hàm kích hoạt phi tuyến thường được sử dụng trong các mô hình mạng nơ-ron nhân tạo. Cách ReLU xử lý các giá trị được diễn giải như sau:
+
+- Đối với ...
+
+Q44: Vì sao ReLU thường được dùng nhiều hơn sigmoid trong CNN hiện đại?
+A44: ReLU (Rectified Linear Unit) thường được ưa chuộng hơn sigmoid trong các mạng nơ-ron tích chập (CNN) hiện đại vì một số lý do chính sau đây:
+
+1. **Giảm Hiện Tượng Vanishing Gradient**: Một trong những...
+
+Q45: ReLU giúp mạng học nhanh hơn bằng cách nào?
+A45: ReLU (Rectified Linear Unit) là một hàm kích hoạt phi tuyến tính được sử dụng rộng rãi trong các mạng nơ-ron nhân tạo, bao gồm cả mạng nơ-ron tích chập (CNN). Một trong những đặc điểm nổi bật của ReLU...
+
+Q46: Hiện tượng vanishing gradient là gì?
+A46: Hiện tượng vanishing gradient (đạo hàm tiêu biến) xảy ra trong quá trình huấn luyện mạng nơ-ron sâu, đặc biệt khi các mạng này có nhiều lớp. Vấn đề này xuất hiện khi các gradient, tức là đạo hàm của h...
+
+Q47: Vì sao sigmoid dễ gây ra vanishing gradient hơn ReLU?
+A47: Hàm sigmoid thường dẫn đến hiện tượng vanishing gradient do đặc tính bão hòa của nó. Khi giá trị đầu vào x của hàm sigmoid đạt đến những giá trị rất nhỏ hoặc lớn, đạo hàm của hàm này trở nên rất nhỏ v...
+
+Q48: ReLU có thể được xem như đang “lọc” thông tin theo nghĩa nào?
+A48: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q49: Ngoài ReLU, CNN còn có thể dùng những hàm kích hoạt nào?
+A49: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q50: Vì sao tầng activation thường đi ngay sau tầng convolution?
+A50: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Đã chạy 50 câu. Nghỉ 600 giây...
+
+Q51: Tầng pooling có nhiệm vụ chính là gì?
+A51: Tầng pooling trong một mạng neural network, đặc biệt trong các mạng Convolutional Neural Networks (CNNs), có nhiệm vụ chính là giảm kích thước của feature map. Việc này được thực hiện để giảm số lượng...
+
+Q52: Vì sao pooling được xem là tầng phi tham số?
+A52: Pooling được xem là tầng phi tham số vì nó không yêu cầu các tham số học nào trong quá trình hoạt động. Nhiệm vụ chính của tầng pooling là giảm kích thước của các feature map bằng cách thực hiện các p...
+
+Q53: Max pooling là gì?
+A53: Max pooling là một phương pháp trong mạng nơ-ron tích chập (CNN) được sử dụng để giảm kích thước của feature map, qua đó giúp giảm số lượng tham số và tải tính toán trong mô hình. Trong quá trình max ...
+
+Q54: Average pooling là gì?
+A54: Average Pooling là một kỹ thuật được sử dụng trong các mạng nơ-ron tích chập (CNN) để giảm kích thước của bản đồ đặc trưng (feature map) nhằm giữ lại những thông tin quan trọng nhất. Phương pháp này t...
+
+Q55: Max pooling và average pooling khác nhau như thế nào?
+A55: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q56: Vì sao pooling giúp giảm kích thước feature map?
+A56: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q57: Pooling giúp giảm số lượng tham số ở phần sau của mạng bằng cách nào?
+A57: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q58: Pooling có làm thay đổi chiều depth của feature map không?
+A58: Kỹ thuật Pooling không thay đổi chiều sâu (depth) của feature map. Pooling chủ yếu ảnh hưởng đến chiều rộng và chiều cao của feature map bằng cách giảm kích thước của chúng. Quá trình này giúp giảm số...
+
+Q59: Vì sao filter pooling được áp dụng độc lập trên từng kênh depth?
+A59: Filter pooling được áp dụng độc lập trên từng kênh depth trong một mạng neural để giảm độ phức tạp tính toán và duy trì sự tách biệt của các đặc trưng trong từng kênh của dữ liệu đầu vào. Pooling là m...
+
+Q60: Stride trong pooling thường được chọn như thế nào so với kích thước filter?
+A60: Trong thao tác pooling, kích thước của stride thường được chọn bằng với kích thước của filter. Đặc biệt, như được nêu trong văn bản, một ví dụ điển hình là khi filter có kích thước 2x2 thì stride cũng...
+
+Đã chạy 60 câu. Nghỉ 600 giây...
+
+Q61: Flattening là gì?
+A61: Flattening là một bước tiền xử lý trong các mạng nơ-ron nhân tạo, đặc biệt là các mạng nơ-ron tích chập (CNN), được sử dụng để chuyển đổi một tensor thành một vector một chiều. Quá trình này chuẩn bị ...
+
+Q62: Vì sao cần flatten tensor 3D trước khi đưa vào fully connected?
+A62: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q63: Tầng fully connected đóng vai trò gì trong mạng CNN?
+A63: No relevant context found for the query.
+
+Q64: Phần nào của CNN thường đảm nhiệm vai trò rút trích đặc trưng?
+A64: Trong kiến trúc mạng Convolutional Neural Networks (CNNs), phần đảm nhiệm vai trò rút trích đặc trưng thường là các tầng **Convolution** và **Pooling**. Các tầng này kết hợp với nhau để thực hiện các ...
+
+Q65: Phần nào của CNN thường đảm nhiệm vai trò phân lớp?
+A65: Trong kiến trúc của Mạng Nơ-ron Tích chập (CNN), phần thường đảm nhiệm vai trò phân lớp là **Tầng Fully Connected**. Sau khi dữ liệu đã trải qua các tầng xử lý như tích chập (convolution), kích hoạt (...
+
+Q66: Softmax có chức năng gì ở lớp cuối?
+A66: Hàm Softmax có chức năng chuyển đổi đầu ra của mạng thành một phân bố xác suất ở lớp cuối cùng của một mạng Neural Network. Cụ thể, với mỗi phần tử trong vector đầu ra cuối cùng, hàm Softmax sẽ biến đ...
+
+Q67: Đầu ra của softmax có đặc điểm gì về miền giá trị?
+A67: Đầu ra của softmax là một phân bố xác suất với các đặc điểm sau về miền giá trị:
+
+1. **Miền giá trị từ 0 đến 1**: Mỗi phần tử trong vector đầu ra của softmax sẽ nằm trong khoảng từ 0 đến 1. Điều này p...
+
+Q68: Tổng các xác suất đầu ra của softmax bằng bao nhiêu?
+A68: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q69: Vì sao fully connected thường xuất hiện ở cuối mạng?
+A69: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q70: Nếu bỏ flattening mà giữ tensor 3D đưa thẳng vào fully connected thì có vấn đề gì?
+A70: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Đã chạy 70 câu. Nghỉ 600 giây...
+
+Q71: Một kiến trúc CNN phổ dụng thường gồm những tầng nào?
+A71: Một kiến trúc Convolutional Neural Network (CNN) phổ dụng thường bao gồm các tầng chính sau đây:
+
+1. **Tầng Convolution (Tích chập)**: Đây là tầng chính để xử lý dữ liệu đầu vào bằng cách áp dụng các ...
+
+Q72: Trong kiến trúc CNN phổ dụng, vì sao convolution và activation thường đi thành cặp?
+A72: No relevant context found for the query.
+
+Q73: Ý nghĩa của việc lặp nhiều lần các khối convolution–activation–pooling là gì?
+A73: Trong cấu trúc của mạng Convolutional Neural Network (CNN), việc lặp nhiều lần các khối convolution, activation, và pooling mang lại nhiều lợi ích quan trọng.
+
+**Convolution Layer**: Lớp convolution c...
+
+Q74: LeNet là một trong những kiến trúc CNN đầu tiên có những đặc điểm nổi bật nào?
+A74: LeNet là một trong những kiến trúc đầu tiên của mạng nơron tích chập (CNN) với những đặc điểm nổi bật sau:
+
+1. **Kiến trúc Đơn Giản**: LeNet được thiết kế để nhận diện các ký tự viết tay, đã đơn giản ...
+
+Q75: LeNet sử dụng loại pooling nào?
+A75: LeNet sử dụng loại pooling được gọi là "subsampling" trong kiến trúc của nó, vốn là một cách khác để nhắc đến kỹ thuật "pooling". Cụ thể, LeNet ban đầu sử dụng phương pháp này để xử lý và giảm kích th...
+
+Q76: LeNet thường dùng hàm kích hoạt nào trong giai đoạn đầu?
+A76: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q77: Trong sơ đồ cài đặt LeNet, luồng biến đổi dữ liệu đi từ input đến output như thế nào?
+A77: No relevant context found for the query.
+
+Q78: Vì sao LeNet được xem là cột mốc quan trọng trong lịch sử CNN?
+A78: LeNet được xem là cột mốc quan trọng trong lịch sử của mạng nơ-ron tích chập (CNN) vì nó đánh dấu sự xuất hiện của một số phát kiến quan trọng trong kiến ​​trúc mạng nơ-ron. LeNet có thể thực hiện các...
+
+Q79: So với mạng neural network truyền thống, LeNet đã kế thừa những ý tưởng gì?
+A79: LeNet, một trong những kiến trúc mạng neuron nhân tạo sớm nhất, đã tận dụng và cải tiến một số ý tưởng từ mạng neural network truyền thống. Đặc biệt, LeNet đã cải tiến khái niệm fully connected bằng c...
+
+Q80: Vì sao LeNet phù hợp để giải thích cấu trúc cơ bản của CNN cho người mới học?
+A80: No relevant context found for the query.
+
+Đã chạy 80 câu. Nghỉ 600 giây...
+
+Q81: Có những cách nào để trực quan hóa một mạng CNN?
+A81: Để trực quan hóa một mạng CNN, có một số cách phổ biến như sau:
+
+1. **Hiển thị Feature Map**: Trong suốt quá trình mà mạng CNN thực hiện các phép biến đổi như convolution, pooling, và ReLU, bạn có thể...
+
+Q82: Vì sao việc trực quan hóa feature map giúp ta hiểu hơn về CNN?
+A82: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q83: Trực quan hóa filter đã học được cho biết điều gì?
+A83: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q84: Trong các lớp đầu của CNN, feature map thường phát hiện những đặc trưng gì?
+A84: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q85: Vì sao feature map có thể phản ánh vị trí không gian của đối tượng trong ảnh?
+A85: Feature map trong mạng Convolutional Neural Network (CNN) có khả năng phản ánh vị trí không gian của đối tượng trong ảnh nhờ vào tính chất bất biến không gian và tỉ lệ của nó. Khi một đối tượng di chu...
+
+Q86: Tính bất biến tương đối về vị trí và tỉ lệ của feature map hỗ trợ bài toán object detection như thế nào?
+A86: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q87: Bài toán object classification khác gì với object detection?
+A87: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q88: Bài toán semantic segmentation khác object detection ở điểm nào?
+A88: Bài toán semantic segmentation và object detection khác nhau ở một số khía cạnh quan trọng như sau:
+
+1. **Mức độ chi tiết trong phân tích**: Object detection chủ yếu xác định vị trí và loại đối tượng ...
+
+Q89: CNN được ứng dụng như thế nào trong face recognition?
+A89: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q90: CNN được ứng dụng như thế nào trong các bài toán y tế hoặc xử lý ảnh thực tế?
+A90: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Đã chạy 90 câu. Nghỉ 600 giây...
+
+Q91: AlexNet có những cải tiến chính nào so với các mạng CNN trước đó?
+A91: AlexNet nổi bật với nhiều cải tiến quan trọng so với các mạng CNN trước đó, những cải tiến bao gồm:
+
+1. **Sử dụng ReLU (Rectified Linear Unit)**: Một trong những cải tiến lớn của AlexNet là thay thế h...
+
+Q92: Vì sao việc thay sigmoid bằng ReLU trong AlexNet là một cải tiến quan trọng?
+A92: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q93: VGG cải tiến AlexNet theo hướng nào về kích thước filter và độ sâu mạng?
+A93: VGG đã cải tiến AlexNet bằng cách thay thế các filter kích thước lớn, như 5x5 và 7x7, bằng các filter nhỏ hơn có kích thước 3x3 và thực hiện liên tiếp nhau [2]. Sự thay đổi này giúp giảm số lượng tham...
+
+Q94: GoogLeNet sử dụng bottleneck 1×1 convolution để làm gì?
+A94: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q95: Module Inception trong GoogLeNet có ý tưởng cốt lõi là gì?
+A95: Module Inception trong GoogLeNet có những ý tưởng cốt lõi như sau:
+
+1. **Tích hợp các bộ lọc kích thước đa dạng**: Inception module kết hợp các bộ lọc với kích thước khác nhau như 1x1, 3x3, và 5x5 để ...
+
+Q96: ResNet giải quyết vấn đề gì khi mạng trở nên quá sâu?
+A96: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q97: Skip connection trong ResNet mang lại lợi ích gì?
+A97: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q98: MobileNet thay convolution thường bằng Depthwise Separable Convolution nhằm mục tiêu gì?
+A98: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q99: Depthwise convolution và pointwise convolution khác nhau như thế nào?
+A99: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Q100: Có 3 cách chính nào để sử dụng pretrained CNN model cho bài toán mới của mình?
+A100: ERROR: HTTPConnectionPool(host='localhost', port=9622): Read timed out. (read timeout=60)
+
+Đã chạy 100 câu. Nghỉ 600 giây...
+
+
+Saved to: /workspace/nhitny/LightRAG/tests/lightrag_100_questions_out.csv

@@ -1,0 +1,97 @@
+Q48: ReLU có thể được xem như đang “lọc” thông tin theo nghĩa nào?
+A48: ReLU, hay Rectified Linear Unit, có thể được xem như một phương pháp "lọc" thông tin trong mạng nơ-ron thông qua cách hoạt động của nó. Cụ thể, ReLU xử lý các đầu vào bằng cách so sánh chúng với giá t...
+
+Q49: Ngoài ReLU, CNN còn có thể dùng những hàm kích hoạt nào?
+A49: Ngoài hàm kích hoạt ReLU (Rectified Linear Unit) phổ biến, CNN còn có thể sử dụng các loại hàm kích hoạt khác như:
+
+1. **Lược đồ Sigmoid**: Trước khi ReLU được ưa chuộng, hàm sigmoid thường được sử dụ...
+
+Q50: Vì sao tầng activation thường đi ngay sau tầng convolution?
+A50: Tầng activation thường được đặt ngay sau tầng convolution trong cấu trúc của một mạng nơ-ron tích chập (CNNs) nhằm mục đích áp dụng một phép biến đổi phi tuyến tính. Các phép biến đổi convolution bản ...
+
+Q55: Max pooling và average pooling khác nhau như thế nào?
+A55: Max pooling và average pooling là hai phương pháp pooling được sử dụng trong các mạng nơ-ron tích chập (CNNs) nhằm giảm kích thước của các feature maps nhưng vẫn giữ các thông tin quan trọng. Dưới đây...
+
+Q56: Vì sao pooling giúp giảm kích thước feature map?
+A56: Pooling là một bước cực kỳ quan trọng trong mạng neural tích chập (CNN) giúp giảm kích thước của feature map. Các lý do chính mà pooling có thể giúp giảm kích thước của feature map bao gồm:
+
+1. **Giảm...
+
+Q57: Pooling giúp giảm số lượng tham số ở phần sau của mạng bằng cách nào?
+A57: Pooling đóng vai trò quan trọng trong việc giảm số lượng tham số trong các mạng neural hiện đại. Cụ thể, quá trình pooling, như **Average Pooling** hoặc **Max Pooling**, giúp giảm kích thước của các f...
+
+Q62: Vì sao cần flatten tensor 3D trước khi đưa vào fully connected?
+A62: Trong kiến trúc mạng nơ-ron, trước khi đưa dữ liệu vào tầng fully connected, cần phải thực hiện bước flatten mà trong đó tensor ba chiều được chuyển đổi thành vector một chiều. Quá trình này rất quan ...
+
+Q68: Tổng các xác suất đầu ra của softmax bằng bao nhiêu?
+A68: Tổng các xác suất đầu ra của hàm softmax bằng 1. Khi softmax được áp dụng lên một vector, chức năng của nó là chuyển đổi các phần tử của vector đó thành một phân bố xác suất, trong đó mỗi phần tử có g...
+
+Q69: Vì sao fully connected thường xuất hiện ở cuối mạng?
+A69: Trong các mạng nơ-ron nhân tạo, đặc biệt là trong các kiến trúc mạng như Convolutional Neural Network (CNN), lớp Fully Connected thường xuất hiện ở cuối mạng vì nhiều lý do:
+
+1. **Chức năng Chuyển Đổi...
+
+Q70: Nếu bỏ flattening mà giữ tensor 3D đưa thẳng vào fully connected thì có vấn đề gì?
+A70: Trong quá trình xử lý của mạng neural network, flattening là một bước chuyển đổi quan trọng để chuẩn bị dữ liệu cho tầng fully connected. Việc bỏ qua bước flattening và gửi trực tiếp tensor 3D vào tần...
+
+Q76: LeNet thường dùng hàm kích hoạt nào trong giai đoạn đầu?
+A76: Trong giai đoạn đầu, LeNet thường sử dụng các hàm kích hoạt kinh điển, cụ thể là hàm sigmoid và hàm tanh (tanh) cho các tầng kích hoạt của nó vào những năm 1998 [1]. 
+
+### References
+
+- [1] Buoi_4_1_1...
+
+Q82: Vì sao việc trực quan hóa feature map giúp ta hiểu hơn về CNN?
+A82: Việc trực quan hóa feature map giúp ta hiểu rõ hơn về CNN thông qua một số khía cạnh quan trọng:
+
+1. **Thấy được quá trình xử lý và trừu tượng hóa hình ảnh**: Trực quan hóa feature map cho phép chúng ...
+
+Q83: Trực quan hóa filter đã học được cho biết điều gì?
+A83: Khi trực quan hóa các filter đã học được trong một mô hình mạng nơ-ron tích chập (CNN), điều này cung cấp cho chúng ta cái nhìn sâu sắc về cách mà mạng nơ-ron xử lý và hiểu dữ liệu đầu vào. Các filter...
+
+Q84: Trong các lớp đầu của CNN, feature map thường phát hiện những đặc trưng gì?
+A84: Trong các lớp đầu tiên của mạng Convolutional Neural Network (CNN), feature maps thường phát hiện ra các đặc trưng cơ bản của hình ảnh. Các feature maps ở giai đoạn này thường tập trung vào việc xác đ...
+
+Q86: Tính bất biến tương đối về vị trí và tỉ lệ của feature map hỗ trợ bài toán object detection như thế nào?
+A86: Tính bất biến tương đối về vị trí và tỉ lệ của feature maps trong mạng CNN đóng vai trò quan trọng trong việc hỗ trợ bài toán phát hiện đối tượng (object detection). Feature maps có khả năng biểu diễn...
+
+Q87: Bài toán object classification khác gì với object detection?
+A87: Bài toán object classification và object detection là hai nhiệm vụ chính trong lĩnh vực thị giác máy tính, nhưng chúng khác nhau ở nhiều khía cạnh về mục tiêu và phương pháp thực hiện.
+
+**Object Class...
+
+Q89: CNN được ứng dụng như thế nào trong face recognition?
+A89: CNN, hay Mạng Nơ-ron Tích chập, là một công nghệ then chốt được ứng dụng rộng rãi trong việc nhận diện khuôn mặt (face recognition). CNN được thiết kế để xử lý dữ liệu có cấu trúc dạng lưới, như hình ...
+
+Q90: CNN được ứng dụng như thế nào trong các bài toán y tế hoặc xử lý ảnh thực tế?
+A90: Convolutional Neural Networks (CNNs) đóng một vai trò quan trọng trong các ứng dụng y tế và xử lý ảnh thực tế. Dưới đây là một số ứng dụng nổi bật của CNN trong các lĩnh vực này:
+
+1. **Ứng Dụng Trong ...
+
+Q92: Vì sao việc thay sigmoid bằng ReLU trong AlexNet là một cải tiến quan trọng?
+A92: Việc thay thế hàm kích hoạt sigmoid bằng ReLU trong kiến trúc mạng AlexNet được coi là một cải tiến quan trọng vì một số lý do chính sau đây:
+
+1. **Giảm hiện tượng vanishing gradient**: Hàm sigmoid kh...
+
+Q94: GoogLeNet sử dụng bottleneck 1×1 convolution để làm gì?
+A94: GoogLeNet sử dụng bottleneck 1x1 convolution để giảm chiều và số lượng tham số trong mạng trước khi thực hiện các phép biến đổi với các filter có kích thước lớn hơn như 5x5. Điều này giúp cải thiện hi...
+
+Q96: ResNet giải quyết vấn đề gì khi mạng trở nên quá sâu?
+A96: ResNet giải quyết vấn đề khi mạng trở nên quá sâu, đặc biệt là hiện tượng "vanishing gradient" (đạo hàm biến mất), vốn là một thách thức lớn trong việc huấn luyện các mạng nơ-ron sâu. Khi mạng có nhiề...
+
+Q97: Skip connection trong ResNet mang lại lợi ích gì?
+A97: Skip Connection trong kiến trúc ResNet mang lại nhiều lợi ích đáng kể. Trước hết, nó giải quyết vấn đề **vanishing gradient** - một hiện tượng phổ biến xảy ra khi các mạng nơ-ron có chiều sâu lớn khôn...
+
+Q98: MobileNet thay convolution thường bằng Depthwise Separable Convolution nhằm mục tiêu gì?
+A98: MobileNet thay thế phép convolution thường bằng Depthwise Separable Convolution nhằm đạt hai mục tiêu chính: giảm số lượng tham số và tăng tốc độ tính toán. Cách tiếp cận này được thiết kế để tối ưu h...
+
+Q99: Depthwise convolution và pointwise convolution khác nhau như thế nào?
+A99: Depthwise Convolution và Pointwise Convolution đều là những kỹ thuật được sử dụng trong kiến trúc mạng thần kinh, đặc biệt là trong các mạng MobileNet, nhằm giảm số lượng tham số và khối lượng tính to...
+
+Q100: Có 3 cách chính nào để sử dụng pretrained CNN model cho bài toán mới của mình?
+A100: Để sử dụng mô hình CNN đã được huấn luyện sẵn (pre-trained CNN model) cho bài toán mới, bạn có thể áp dụng ba cách chính sau đây:
+
+1. **Sử dụng Trực Tiếp:** Cách đầu tiên là sử dụng trực tiếp mô hình ...
+
+
+Saved to: /workspace/nhitny/LightRAG/tests/lightrag_100_questions_out_fix.csv

@@ -1,0 +1,70 @@
+[
+  {
+    "query": "Mạng CNN là gì?",
+    "expected_answer": "CNN là một kiến trúc mạng rất nổi tiếng trong lĩnh vực học sâu, được sử dụng để xử lý dữ liệu ảnh."
+  },
+  {
+    "query": "Bài toán phân loại ảnh hoạt động như thế nào?",
+    "expected_answer": "Đầu vào của mô hình là một tấm ảnh và đầu ra là các nhãn cho biết đối tượng trong ảnh."
+  },
+  {
+    "query": "Ảnh mức xám được biểu diễn như thế nào?",
+    "expected_answer": "Ảnh mức xám được biểu diễn bằng một ma trận trong đó mỗi pixel có giá trị từ 0 đến 255."
+  },
+  {
+    "query": "Ảnh màu được biểu diễn như thế nào?",
+    "expected_answer": "Ảnh màu được biểu diễn bởi ba kênh màu red, green và blue."
+  },
+  {
+    "query": "Khi ghép ba kênh màu RGB lại thì ta thu được gì?",
+    "expected_answer": "Ba ma trận của các kênh red, green và blue khi ghép lại sẽ tạo thành một tensor."
+  },
+  {
+    "query": "Nếu dùng mạng Neural Network fully connected cho ảnh kích thước 200x200 thì số node của layer là bao nhiêu?",
+    "expected_answer": "Layer sẽ có 40000 node vì số node bằng số phần tử của ảnh đầu vào 200 nhân 200."
+  },
+  {
+    "query": "Mạng Neural Network fully connected với ảnh 200x200 có khoảng bao nhiêu tham số?",
+    "expected_answer": "Khoảng 1.6 tỷ tham số."
+  },
+  {
+    "query": "Tại sao số lượng tham số lớn lại gây vấn đề cho mô hình?",
+    "expected_answer": "Vì số lượng tham số quá nhiều có thể dẫn đến hiện tượng overfitting."
+  },
+  {
+    "query": "Overfitting là gì?",
+    "expected_answer": "Overfitting là hiện tượng khi mô hình học rất tốt trên dữ liệu huấn luyện nhưng có độ chính xác thấp trên dữ liệu kiểm tra."
+  },
+  {
+    "query": "Locally connected trong mạng neural nghĩa là gì?",
+    "expected_answer": "Mỗi node chỉ kết nối với một vùng cục bộ của ảnh thay vì kết nối với toàn bộ điểm ảnh đầu vào."
+  },
+  {
+    "query": "Trong ví dụ bài giảng, vùng cục bộ của locally connected có kích thước bao nhiêu?",
+    "expected_answer": "Vùng cục bộ có kích thước 10 x 10."
+  },
+  {
+    "query": "Khi dùng locally connected, số tham số giảm xuống còn bao nhiêu?",
+    "expected_answer": "Khoảng 4 triệu tham số."
+  },
+  {
+    "query": "Weight sharing trong CNN là gì?",
+    "expected_answer": "Weight sharing là cơ chế các node ở các vị trí khác nhau sử dụng chung một bộ trọng số."
+  },
+  {
+    "query": "Phép biến đổi convolution là gì?",
+    "expected_answer": "Convolution là phép biến đổi trong đó một bộ trọng số được trượt trên toàn bộ ảnh để trích xuất thông tin."
+  },
+  {
+    "query": "Convolution được sử dụng để làm gì trong xử lý ảnh?",
+    "expected_answer": "Convolution được dùng để trích xuất đặc trưng từ ảnh."
+  },
+  {
+    "query": "Sobel filter dùng để phát hiện đặc trưng gì trong ảnh?",
+    "expected_answer": "Sobel filter được dùng để phát hiện biên cạnh theo chiều dọc trong ảnh."
+  },
+  {
+    "query": "Trong CNN hiện đại, trọng số của các filter được xác định như thế nào?",
+    "expected_answer": "Các trọng số của filter được học tự động thông qua quá trình huấn luyện trên dữ liệu."
+  }
+]

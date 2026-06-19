@@ -74,6 +74,28 @@ download_models_hf.py
 # temporary test files in project root
 /test_*
 
+# Agent / Tool workspaces
+.codex/
+
+# Downloaded models
+models/
+
+# Binaries
+ngrok
+tmate-2.4.0-static-linux-amd64.tar.xz
+tmate-2.4.0-static-linux-amd64/
+
+# Personal notes
+note.md
+
+# Reproduce output / workdir
+reproduce_output/
+reproduce_workdir/
+
+# Generated test outputs
+tests/*_out.csv
+tests/*_out_fix.csv
+
 # Cline files
 memory-bank
 .claude/CLAUDE.md
